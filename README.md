@@ -90,17 +90,19 @@ curl -X POST http://localhost:8080/receipts/process \
     { "shortDescription": "Gatorade", "price": "2.25" }
   ],
   "total": "9.00"
-}'
+}
+```
 ## Response Example:
 
 ```json
 {
   "id": "some-unique-receipt-id"
 }
+```
 ## Get Reward Points for a Receipt
 
 Replace `{id}` with the ID returned from the previous step:
 
 ```bash
 curl -X GET http://localhost:8080/receipts/{id}/points
-
+```
