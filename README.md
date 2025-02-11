@@ -72,7 +72,7 @@ http://localhost:8080
 
 ### Step 4: Test API Endpoints using curl or Postman.
 
-## Process a Receipt
+### Process a Receipt
 
 Use the following `curl` command to send a `POST` request to process a receipt:
 
