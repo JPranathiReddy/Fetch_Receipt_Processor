@@ -71,7 +71,6 @@ The application will now be accessible at:
 http://localhost:8080
 
 ### Step 4: Test API Endpoints using curl or Postman.
-# Step 4: Test API Endpoints using curl or Postman
 
 ## Process a Receipt
 
