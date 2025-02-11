@@ -47,7 +47,7 @@ Follow these steps to build the Docker image and run the container:
 If you haven't already, clone the repository and navigate to the project folder:
 
 ```bash
-git clone [https://github.com/yourusername/receiptrewards.git](https://github.com/JPranathiReddy/Fetch_Receipt_Processor.git)
+git clone https://github.com/JPranathiReddy/Fetch_Receipt_Processor.git
 cd receiptrewards
 ```
 
