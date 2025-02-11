@@ -48,6 +48,8 @@ If you haven't already, clone the repository and navigate to the project folder:
 
 ```bash
 git clone https://github.com/JPranathiReddy/Fetch_Receipt_Processor.git
+```
+```bash
 cd receiptrewards
 ```
 
@@ -66,9 +68,6 @@ Once the Docker image is built, start the container:
 ```bash
 docker run -p 8080:8080 receiptrewards-app
 ```
-
-The application will now be accessible at:
-http://localhost:8080
 
 ### Step 4: Test API Endpoints using curl or Postman.
 
@@ -90,7 +89,7 @@ curl -X POST http://localhost:8080/receipts/process \
     { "shortDescription": "Gatorade", "price": "2.25" }
   ],
   "total": "9.00"
-}
+}'
 ```
 ## Response Example:
 
