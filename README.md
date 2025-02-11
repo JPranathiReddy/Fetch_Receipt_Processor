@@ -5,7 +5,6 @@ This project is a Spring Boot web service that processes receipts and calculates
 
 The project includes a pre-built JAR file (generated in the `target` directory) and a Dockerfile to containerize the application.
 
-
 ## API Endpoints
 
 - **POST /receipts/process**  
@@ -29,6 +28,8 @@ The project includes a pre-built JAR file (generated in the `target` directory) 
   ],
   "total": "9.00"
 }
+```
+
 ## Repository Contents
 
 - **`target/receiptrewards-0.0.1-SNAPSHOT.jar`**  
@@ -48,22 +49,25 @@ If you haven't already, clone the repository and navigate to the project folder:
 ```bash
 git clone https://github.com/yourusername/receiptrewards.git
 cd receiptrewards
-## Step 2: Build the Docker Image
+```
+
+### Step 2: Build the Docker Image
 
 From the project root (where the Dockerfile is located), run:
 
 ```bash
 docker build -t receiptrewards-app .
+```
 
-## Step 3: Run the Docker Container
+### Step 3: Run the Docker Container
 
 Once the Docker image is built, start the container:
 
 ```bash
 docker run -p 8080:8080 receiptrewards-app
+```
+
 The application will now be accessible at:
 http://localhost:8080
 
-##Step 4: Test API Endpoints using curl or Postman.
-
-
+### Step 4: Test API Endpoints using curl or Postman.
