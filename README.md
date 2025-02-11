@@ -104,5 +104,5 @@ curl -X POST http://localhost:8080/receipts/process \
 Replace `{id}` with the ID returned from the previous step:
 
 ```bash
-curl -X GET http://localhost:8080/receipts/{id}/points
+curl -X GET http://localhost:8080/receipts/id/points
 ```
