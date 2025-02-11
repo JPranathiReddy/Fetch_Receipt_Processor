@@ -71,3 +71,37 @@ The application will now be accessible at:
 http://localhost:8080
 
 ### Step 4: Test API Endpoints using curl or Postman.
+# Step 4: Test API Endpoints using curl or Postman
+
+## Process a Receipt
+
+Use the following `curl` command to send a `POST` request to process a receipt:
+
+```bash
+curl -X POST http://localhost:8080/receipts/process \
+     -H "Content-Type: application/json" \
+     -d '{
+  "retailer": "M&M Corner Market",
+  "purchaseDate": "2022-03-20",
+  "purchaseTime": "14:33",
+  "items": [
+    { "shortDescription": "Gatorade", "price": "2.25" },
+    { "shortDescription": "Gatorade", "price": "2.25" },
+    { "shortDescription": "Gatorade", "price": "2.25" },
+    { "shortDescription": "Gatorade", "price": "2.25" }
+  ],
+  "total": "9.00"
+}'
+## Response Example:
+
+```json
+{
+  "id": "some-unique-receipt-id"
+}
+## Get Reward Points for a Receipt
+
+Replace `{id}` with the ID returned from the previous step:
+
+```bash
+curl -X GET http://localhost:8080/receipts/{id}/points
+
